@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+
+
+  <div class="container-fluid" id="heading"><h1>Use Headphones For Better Experience</h1></div>
+  <audio id="mysound1">
+    <source src="sound1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="mysound2">
+    <source src="sound2.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="mysound3">
+    <source src="sound3.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="mysound4">
+    <source src="sound4.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="mysound5">
+    <source src="sound5.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="mysound6">
+    <source src="sound6.wav" type="audio/wav">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <!-- //tune1 -->
+  <audio id="tune1">
+    <source src="tune1.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <audio id="tune2">
+    <source src="tune2.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <audio id="tune3">
+    <source src="tune3.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <div class="container-fluid ">
+
+    <div class="row " >
+      <div class="col mr-auto">
+        <button onclick="play1Audio()" type="button" id="s1"></button>
+      </div>
+      <div class="col mr-auto">
+        <button onclick="play2Audio()" type="button" id="s2"></button>
+      </div>
+      <div class="col mr-auto">
+        <button onclick="play3Audio()" type="button" id="s3"></button>
+      </div>
+      <div class="col mr-auto">
+        <button onclick="tun1Audio()" ondblclick="tun1AudioStop()" id="t1" type="button"></button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col">
+
+        <button onclick="play4Audio()" type="button" id="s4"></button>
+      </div>
+      <div class="col">
+        <button onclick="play5Audio()" type="button" id="s5"></button>
+      </div>
+      <div class="col" >
+        <button onclick="play6Audio()" type="button" id="s6"></button>
+      </div>
+      <div class="col">
+
+
+        <button onclick="tun2Audio()" ondblclick="tun2AudioStop()" type="button" id="t2"></button>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script src="file.js">
+
+  </script>
+
+</body>
+
+</html>
